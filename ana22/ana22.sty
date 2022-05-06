@@ -2,23 +2,21 @@
 \ProvidesPackage{ana22}
   [2022/04/22 v0.01 Analysis I]
 
-\RequirePackage{amsfonts}
-\RequirePackage{amsmath}
-\RequirePackage{amsthm}
-\RequirePackage{amssymb}
-\RequirePackage{mathtools}
-\RequirePackage{tikz}
-\RequirePackage{scrlayer-scrpage}
+\newcommand{\zz}{\textbf{z.z.:}}
+\newcommand{\alln}{für alle \(n\in \n\)}
+\newcommand{\ninn}{\(n\in \n\)}
 
+%induktion
+\newcommand{\ia}[1]{Beweis durch vollständige Induktion nach \(n\).\\\textbf{I.A.: \(n= #1\)\\} }
+\newcommand{\is}{\textbf{I.S.:} \(n\mapsto n+1\)}
+\newcommand{\iv}{\textbf{I.V.:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:}
+\newcommand{\indend}{Nach dem Prinzip der vollständigen Induktion folgt die Aussage \alln.\\\qed}
 
-\newcommand{\obda}{o.\ B.\ d.\ A.}
-\newcommand{\n}{\mathbb{N} }
-\newcommand{\nz}{{\mathbb{N} }_0}
-\newcommand{\z}{\mathbb{Z} }
-\newcommand{\q}{\mathbb{Q} }
-%\newcommand{\r}{\mathbb{R} }
-\newcommand{\nck}{{n\choose k}}
-\newcommand{\wow}{wow echt krass}
+\newcommand{\eqiv}{\stackrel{I.V.}{=}}
+\newcommand{\eqbinf}{\stackrel{bin. Formel}{=}}
+\newcommand{\geqiv}{\stackrel{I.V.}{\geq}}
+
+\newcommand{\limes}[1][n]{\lim\limits_{#1 \to \infty}}
 \let\myDate\date
 
 
