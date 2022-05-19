@@ -3,18 +3,32 @@
   [2022/04/22 v0.01 Analysis I]
 
 \newcommand{\zz}{\textbf{z.z.:}}
+\newcommand{\beweis}{\textbf{Beweis:}\\}
 \newcommand{\alln}{für alle \(n\in \n\)}
-\newcommand{\ninn}{\(n\in \n\)}
+\newcommand{\nen}{{n\in \n}}
 
 %induktion
-\newcommand{\ia}[1]{Beweis durch vollständige Induktion nach \(n\).\\\textbf{I.A.: \(n= #1\)\\} }
-\newcommand{\is}{\textbf{I.S.:} \(n\mapsto n+1\)}
-\newcommand{\iv}{\textbf{I.V.:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:}
+\newcommand{\ia}[1][1]{Beweis durch vollständige Induktion nach \(n\).\\~\\\textbf{IA: \(n= #1\)\\~\\} }
+\newcommand{\is}[1][1]{\textbf{IS:} \(n\mapsto n+#1\)\\~\\\hspace*{5mm}\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:\\~\\\hspace*{5mm}}
+\newcommand{\iv}{\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:}
 \newcommand{\indend}{Nach dem Prinzip der vollständigen Induktion folgt die Aussage \alln.\\\qed}
 
-\newcommand{\eqiv}{\stackrel{I.V.}{=}}
+\newcommand{\induction}[3]{\zz \(#1\)\\~\\Beweis durch vollständige Induktion nach \(n\).\\~\\\textbf{IA: \(n= #2\)\\~\\}\textbf{IS:} \(n\mapsto n+#3\)\\~\\\hspace*{5mm}\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:\\~\\\hspace*{5mm}\(#1\)\\~\\}
+
+\newcommand{\limproof}[1][x_n]{Es gilt \(\limlim \frac{1}{n} =0\), folglich setzt sich \((#1)\) durch Elementaroperation aus konvergenten Folgen zusammen. Mit den Grenzwertsätzen folgt, \((#1)\) konvergiert mit\\}
+
+\newcommand{\case}[3]{= \left\{
+  \begin{array}{ll}
+  #1 & #2 \\
+  #3 & \, \textrm{sonst} \\
+  \end{array}
+  \right.
+  }
+  
+\newcommand{\eqiv}{\stackrel{IV}{=}}
 \newcommand{\eqbinf}{\stackrel{bin. Formel}{=}}
-\newcommand{\geqiv}{\stackrel{I.V.}{\geq}}
+\newcommand{\geqiv}{\stackrel{IV}{\geq}}
+\newcommand{\leqiv}{\stackrel{IV}{\leq}}
 
 \newcommand{\limes}[1][n]{\lim\limits_{#1 \to \infty}}
 \let\myDate\date

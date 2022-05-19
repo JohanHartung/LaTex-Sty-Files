@@ -1,0 +1,37 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{coma}
+  [2022/04/22 v0.01 Allgemein]
+
+\RequirePackage{amsfonts}
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+\RequirePackage{tikz}
+\RequirePackage{scrlayer-scrpage}
+%von Johan, für Ian
+
+\newcommand{\tab}{\hspace*{5mm}}
+\newcommand{\tabtab}{\hspace*{10mm}}
+\newcommand{\tabtabtab}{\hspace*{15mm}}
+\newcommand{\notab}{\hspace*{-4mm}}
+
+\newcommand{\bigo}{\mathcal{O} }
+
+\newcommand{\require}[1]{\textbf{Require:} #1\\}
+\newcommand{\ensure}[1]{\textbf{Ensure:} #1\\}
+\newcommand{\fordo}[1]{\textbf{for} #1 \textbf{do}\\}
+\newcommand{\ifthen}[1]{\textbf{if} #1 \textbf{then}\\}
+\newcommand{\func}[1]{\textbf{function} #1\\}
+\newcommand{\forend}{\textbf{end for}}
+\newcommand{\ifend}{\textbf{end if}}
+\newcommand{\funcend}{\textbf{end function}}
+\newcommand{\return}[1]{\textbf{return} #1}
+\newcommand{\print}[1]{PRINT #1}
+\newcommand{\append}[1]{APPEND #1}
+
+
+\let\myDate\date
+
+
+\endinput
