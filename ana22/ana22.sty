@@ -13,7 +13,7 @@
 \newcommand{\iv}{\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:}
 \newcommand{\indend}{Nach dem Prinzip der vollständigen Induktion folgt die Aussage \alln.\\\qed}
 
-\newcommand{\induction}[3]{\zz \(#1\)\\~\\Beweis durch vollständige Induktion nach \(n\).\\~\\\textbf{IA: \(n= #2\)\\~\\}\textbf{IS:} \(n\mapsto n+#3\)\\~\\\hspace*{5mm}\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:\\~\\\hspace*{5mm}\(#1\)\\~\\}
+%\newcommand{\induction}[3]{\zz \(#1\)\\~\\Beweis durch vollständige Induktion nach \(n\).\\~\\\textbf{IA: \(n= #2\)\\~\\}\textbf{IS:} \(n\mapsto n+#3\)\\~\\\hspace*{5mm}\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:\\~\\\hspace*{5mm}\(#1\)\\~\\}
 
 \newcommand{\limproof}[1][x_n]{Es gilt \(\limlim \frac{1}{n} =0\), folglich setzt sich \((#1)\) durch Elementaroperation aus konvergenten Folgen zusammen. Mit den Grenzwertsätzen folgt, \((#1)\) konvergiert mit\\}
 
@@ -31,6 +31,17 @@
 \newcommand{\leqiv}{\stackrel{IV}{\leq}}
 
 \newcommand{\limes}[1][n]{\lim\limits_{#1 \to \infty}}
+
+\newenvironment{induction}[4]{
+  \newcommand{\nn}{n}
+  \zz\; \(#1, #2\)\\~\\Beweis durch vollständige Induktion nach \(n\).\\~\\\textbf{IA: \(n= #3\)\\~\\}
+  \renewcommand{\nn}{#3}
+  \(#1=#4\)\\~\\
+  \textbf{IS:} \(n\mapsto n+1\)\\~\\\hspace*{5mm}\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:\\~\\
+}{
+  \\~\\Nach dem Prinzip der vollständigen Induktion folgt die Aussage \alln.\\\qed
+}
+
 \let\myDate\date
 
 
