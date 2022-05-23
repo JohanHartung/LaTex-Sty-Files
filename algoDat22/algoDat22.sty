@@ -5,17 +5,17 @@
 
 \let\myDate\date
 \RequirePackage{lineno}
-%\newcommand{\for}[3]{\textbf{for \(#1 := #2\) to \(#3\) do}\\}
-%\newcommand{\forDown}[3]{\textbf{for \(#1 := #2\) downto \(#3\) do}\\}
-%\newcommand{\forEnd}{\textbf{end for}}
-%\newcommand{\ifThen}[1]{\textbf{if \(#1\) then}\\}
-%\newcommand{\ifEnd}{\textbf{end if}}
+\newcommand{\for}[3]{\textbf{for \(#1 := #2\) to \(#3\) do}\\}
+\newcommand{\forDown}[3]{\textbf{for \(#1 := #2\) downto \(#3\) do}\\}
+\newcommand{\forEnd}{\textbf{end for}}
+\newcommand{\ifThen}[1]{\textbf{if \(#1\) then}\\}
+\newcommand{\ifEnd}{\textbf{end if}}
 \newcommand{\func}[2]{\textbf{funktion} #1(#2)\\}
 \newcommand{\return}[1]{\textbf{return \(#1\)}}
 
-\newenvironment{for}[3]{\textbf{for \(#1 := #2\) to \(#3\) do}\\\hspace*{5mm}}{\\\textbf{end for}}
-\newenvironment{forDown}[3]{\textbf{for \(#1 := #2\) downto \(#3\) do}\\\hspace*{5mm}}{\\\textbf{end for}}
-\newenvironment{ifThen}[1]{\textbf{if \(#1\) then}\\\hspace*{5mm}}{\\\textbf{end if}}
+%\newenvironment{for}[3]{\textbf{for \(#1 := #2\) to \(#3\) do}\\}{\\\textbf{end for}}
+%\newenvironment{forDown}[3]{\textbf{for \(#1 := #2\) downto \(#3\) do}\\\hspace*{5mm}}{\\\textbf{end for}}
+%\newenvironment{ifThen}[1]{\textbf{if \(#1\) then}\\\hspace*{5mm}}{\\\textbf{end if}}
 
 \newcommand{\bigo}[1]{\(\mathcal{O}(#1)\)}
 \newcommand{\geqn}{\stackrel{n\geq 0}{\geq}}
