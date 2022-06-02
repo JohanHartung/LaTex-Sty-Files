@@ -4,6 +4,12 @@
 
 \RequirePackage{marvosym}
 
+\newcommand{\series}{(a_{n})}
+\newcommand{\setseries}[3][]{\renewcommand{\series}{(#2_{#3})_{#1}}}
+\newcommand{\iseries}{\sum\limits^\infty_{k=1}}
+\newcommand{\setiseries}[1]{\renewcommand{\iseries}{\sum\limits^\infty_{#1}}}
+
+
 \newcommand{\flash}{\hfill\text{\Lightning}}
 
 \newcommand{\zz}{\textbf{z.z.:}}
