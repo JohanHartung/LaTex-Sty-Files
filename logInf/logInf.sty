@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{logInf}
+  [2022/04/22 v0.01 Allgemein]
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[ngerman]{babel}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{stmaryrd}
+\newcommand{\as}{\mathsf{AS}}
+\newcommand{\al}{\mathsf{AL}}
+\newcommand{\aal}{A_{\mathsf{AL}}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\Imod}{\mathcal{I}\models}
+\newcommand{\Inotmod}{\mathcal{I}\not\models}
+\newcommand{\banana}[1]{\left\llbracket #1\right\rrbracket}
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\zz}{\textbf{z.z.:}}
+\newcommand{\beweis}{\textbf{Beweis:}\\}
+\newcommand{\alln}{für alle \(n\in \n\)}
+\newcommand{\nen}{{n\in \n}}
+
+%induktion
+\newcommand{\ia}[1][1]{\textbf{IA: \(n= #1\)\\~\\} }
+\newcommand{\iaplus}[1][1]{Beweis durch vollständige Induktion nach \(n\).\\~\\\textbf{IA: \(n= #1\)\\~\\} }
+\newcommand{\is}[1][1]{\textbf{IS:} \(n\mapsto n+#1\)\\~\\\hspace*{5mm}\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:\\~\\\hspace*{5mm}}
+\newcommand{\iv}{\textbf{IV:} Angenommen, für beliebiges, aber festes \(n\in\n\) gilt:}
+\newcommand{\indend}{Nach dem Prinzip der vollständigen Induktion folgt die Aussage \alln.\\\qed}
+
+\let\myDate\date
+
+
+\endinput

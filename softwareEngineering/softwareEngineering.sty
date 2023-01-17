@@ -1,0 +1,23 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{softwareEngineering}
+  [2022/04/22 v0.01 Allgemein]
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[ngerman]{babel}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{multirow}
+\newcommand{\slack}[5]{\begin{table}[]
+  \begin{tabular}{l|l|l|}
+  \cline{2-3}
+                                            & \multirow{2}{*}{#2} & \multirow{2}{*}{#4} \\ \cline{1-1}
+  \multicolumn{1}{|l|}{\multirow{2}{*}{#1}} &                     &                     \\ \cline{2-3} 
+  \multicolumn{1}{|l|}{}                    & \multirow{2}{*}{#3} & \multirow{2}{*}{#5} \\ \cline{1-1}
+                                            &                     &                     \\ \cline{2-3} 
+  \end{tabular}
+  \end{table}}
+
+
+\let\myDate\date
+
+
+\endinput
